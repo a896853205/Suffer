@@ -1,8 +1,8 @@
 import { RouteConfig } from 'react-router-config';
 
 import App from '../App';
-import ComponentsWelcome from '../page/components/welcome';
-import HooksWelcome from '../page/hooks/welcome';
+import ComponentsWelcome from '../page/Components/Welcome';
+import HooksWelcome from '../page/Hooks/Welcome';
 
 const config: RouteConfig[] = [
   {

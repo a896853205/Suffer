@@ -27,24 +27,21 @@ export default (props: RouteConfigComponentProps) => {
             new MenuItemGroup('Components', [
               {
                 url: '/componentsWelcome',
-                name: '预览',
+                name: '目录',
               },
             ]),
             new MenuItemGroup('Hooks', [
               {
                 url: '/hooksWelcome',
-                name: '预览',
+                name: '目录',
               },
             ]),
             new MenuItem('/other', '其他'),
           ]}
         />
       </Sider>
-      <div
-        style={{
-          marginLeft: '300px',
-        }}>
-        <Content>{renderRoutes(route?.routes)}</Content>
+      <div className='content-box'>
+        <Content className='content'>{renderRoutes(route?.routes)}</Content>
         <Footer>code@Eric design@Luna</Footer>
       </div>
     </Layout>
